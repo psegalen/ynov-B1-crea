@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Validation</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body>
+    <h1>Exo 1</h1>
+    <h2>Validation d'un formulaire</h2>
+    <div>
+      Nom : <input type="text" id="nom" onblur="validerNom()" />
+      <span id="erreur-nom" class="erreur"></span>
+    </div>
+    <br />
+    <div>
+      Age : <input type="text" id="age" onblur="validerAge()" />
+      <span id="erreur-age" class="erreur"></span>
+    </div>
+    <br />
+    <button id="bouton-valider" onclick="valider()" disabled>
+      Valider
+    </button>
+    <br />
+    <h1 id="message"></h1>
+    <script src="index.js"></script>
+  </body>
+</html>
