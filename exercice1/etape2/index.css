@@ -1,0 +1,8 @@
+body {
+  padding: 32px;
+  font-family: sans-serif;
+}
+
+.erreur {
+  color: red;
+}
