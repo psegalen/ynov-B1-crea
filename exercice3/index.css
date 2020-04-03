@@ -1,0 +1,15 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 32px;
+}
+
+.titre-section {
+  font-weight: bold;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.corps-section {
+  overflow: hidden;
+}
