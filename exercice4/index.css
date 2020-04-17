@@ -28,12 +28,79 @@ body {
   margin-left: 48px;
 }
 
-.film-note {
-  margin: 0 32px;
-}
-
 .film-annee-genre {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 16px;
+}
+
+/* Styles pour les notes sous forme d'étoiles */
+
+.stars-outer {
+  display: inline-block;
+  position: relative;
+  font-family: FontAwesome;
+  margin: 0 32px;
+  font-weight: normal;
+}
+
+.stars-outer::before {
+  content: "\f006 \f006 \f006 \f006 \f006 \f006 \f006 \f006 \f006 \f006";
+}
+
+.stars-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 50%;
+}
+
+.stars-inner::before {
+  content: "\f005 \f005 \f005 \f005 \f005 \f005 \f005 \f005 \f005 \f005";
+  color: #f8ce0b;
+}
+
+/* Styles pour la fonctionnalité cacher / montrer les fiches */
+
+.film-fiche {
+  overflow: hidden;
+  transition: height 0.5s;
+}
+
+.film-titre {
+  cursor: pointer;
+}
+
+/* Styles pour le header */
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 32px;
+  z-index: 2;
+  background: #666;
+  transition: transform 0.4s;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: #ddd;
+  font-size: 20pt;
+}
+
+.scroll-down .menu {
+  transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up .menu {
+  transform: none;
 }

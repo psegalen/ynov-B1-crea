@@ -2,12 +2,28 @@
   <head>
     <title>Films</title>
     <link rel="stylesheet" type="text/css" href="index.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
+    <header class="page-header">
+      <nav>
+        <div class="menu">
+          <button onclick="toutCacher()">Tout cacher</button>
+          <button onclick="toutMontrer()">Tout montrer</button>
+        </div>
+      </nav>
+    </header>
     <div class="liste-films">
       <div class="film-racine">
         <div class="film-titre">
-          La Menace fantôme <span class="film-note">6.5</span>
+          La Menace fantôme
+          <span class="stars-outer">
+            <span class="stars-inner">6.5</span>
+          </span>
         </div>
         <div class="film-fiche">
           <div class="film-poster">
@@ -42,7 +58,10 @@
       </div>
       <div class="film-racine">
         <div class="film-titre">
-          L'Attaque des clones <span class="film-note">6.5</span>
+          L'Attaque des clones
+          <span class="stars-outer">
+            <span class="stars-inner">6.5</span>
+          </span>
         </div>
         <div class="film-fiche">
           <div class="film-poster">
@@ -77,7 +96,10 @@
       </div>
       <div class="film-racine">
         <div class="film-titre">
-          La Revanche des Sith <span class="film-note">7.3</span>
+          La Revanche des Sith
+          <span class="stars-outer">
+            <span class="stars-inner">7.3</span>
+          </span>
         </div>
         <div class="film-fiche">
           <div class="film-poster">
@@ -109,7 +131,10 @@
       </div>
       <div class="film-racine">
         <div class="film-titre">
-          La Guerre des étoiles <span class="film-note">8.2</span>
+          La Guerre des étoiles
+          <span class="stars-outer">
+            <span class="stars-inner">8.2</span>
+          </span>
         </div>
         <div class="film-fiche">
           <div class="film-poster">
@@ -143,7 +168,10 @@
       </div>
       <div class="film-racine">
         <div class="film-titre">
-          L'Empire contre-attaque <span class="film-note">8.4</span>
+          L'Empire contre-attaque
+          <span class="stars-outer">
+            <span class="stars-inner">8.4</span>
+          </span>
         </div>
         <div class="film-fiche">
           <div class="film-poster">
@@ -178,7 +206,10 @@
       </div>
       <div class="film-racine">
         <div class="film-titre">
-          Le Retour du Jedi <span class="film-note">8</span>
+          Le Retour du Jedi
+          <span class="stars-outer">
+            <span class="stars-inner">8</span>
+          </span>
         </div>
         <div class="film-fiche">
           <div class="film-poster">
@@ -212,5 +243,6 @@
         </div>
       </div>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
