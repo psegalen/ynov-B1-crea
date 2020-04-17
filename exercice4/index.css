@@ -1,0 +1,39 @@
+body {
+  background-color: #333;
+  color: #ddd;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 120px;
+  display: flex;
+  justify-content: center;
+}
+
+.liste-films {
+  width: 70%;
+}
+
+.film-titre {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+
+.film-fiche {
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.film-details {
+  margin-left: 48px;
+}
+
+.film-note {
+  margin: 0 32px;
+}
+
+.film-annee-genre {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
