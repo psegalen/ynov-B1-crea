@@ -1,0 +1,42 @@
+body {
+  width: 70%;
+  margin: auto;
+  margin-top: 32px;
+  font-family: sans-serif;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #333;
+}
+
+svg {
+  /*svg images by https://iconmonstr.com*/
+  width: 16px;
+  height: 16px;
+}
+
+.toggle-btn {
+  margin-bottom: 25px;
+}
+
+.toggle-btn {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: flex;
+}
+
+.info {
+  overflow: hidden;
+  transition: height 0.5s;
+}
