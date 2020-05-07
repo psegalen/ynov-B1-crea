@@ -1,0 +1,20 @@
+body {
+  box-sizing: border-box;
+  background-color: #25232e;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+hr {
+  margin-top: 16px;
+  margin-bottom: 32px;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+}
+
+.formations__description {
+  width: 70%;
+  margin: auto auto;
+  padding: 32px 64px;
+  background-color: white;
+}

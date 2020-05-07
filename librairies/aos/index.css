@@ -1,0 +1,44 @@
+body {
+  background: url(fond_ynov.jpg) no-repeat center center fixed;
+  background-size: cover;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 0 5%;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.title {
+  color: #ddd;
+  font-size: 48pt;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formations {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.formation {
+  font-size: 48pt;
+  color: #ddd;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 54px;
+  margin-bottom: 32px;
+}
+
+.informatique,
+.robotique {
+  align-self: flex-end;
+}
+
+.design,
+.audiovisuel {
+  align-self: flex-start;
+}
