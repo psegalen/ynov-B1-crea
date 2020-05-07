@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Smooth Scroll</title>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@16/dist/smooth-scroll.polyfills.min.js"></script>
+  </head>
+  <body>
+    <div id="enHaut"></div>
+    <a data-scroll href="#enBas">Aller en bas</a>
+    <a data-scroll href="#hello2">Aller au 2e Hello</a>
+    <div style="height: 400px;">Smooth !</div>
+    <div id="hello2" style="height: 400px;">Hello</div>
+    <div style="height: 400px;">Hello</div>
+    <div style="height: 400px;">Hello</div>
+    <div style="height: 400px;">Hello</div>
+    <a data-scroll href="#enHaut">Aller en haut</a>
+    <div id="enBas"></div>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+  </body>
+</html>

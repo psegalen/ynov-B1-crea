@@ -2,6 +2,7 @@
   <head>
     <title>Canvi</title>
     <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="lib/canvi.css" />
     <style>
       /*<![CDATA[*/
       .grille img {
@@ -30,332 +31,296 @@
     </style>
   </head>
   <body>
-    <div class="formations__description">
-      <h2>Que font les étudiants de l’école de dessin Lim’Art ?</h2>
-      <p>
-        Au sein de Bordeaux Ynov Campus,
-        <strong>Limart</strong> propose l’une des meilleures
-        formations en dessin et
-        <strong>illustration numérique</strong>. Nos étudiants sont
-        d’abord formés aux techniques fondamentales du
-        <strong>dessin académique et traditionnel</strong>, en
-        parallèle ils acquièrent toutes les connaissances en
-        <strong>dessin digital</strong> avec la maîtrise de tous les
-        logiciels utilisés par les<strong>
-          professionnels de l’image en 2D</strong
-        >. En 5 ans, ils atteignent un niveau exceptionnel grâce au
-        <strong>coaching personnalisé et individuel</strong>&nbsp;des
-        professionnels qui les suivent quotidiennement. Ce
-        <strong>parcours exigeant</strong> les mènera vers un<strong>
-          large choix de carrières</strong
-        >
-        dans l’édition, les jeux vidéo, les jeux de plateau ou de
-        société, le cinéma, le cinéma d’animation, les effets
-        spéciaux, etc.
-      </p>
-      <p>
-        Leurs travaux sont visibles ci-dessous pour un petit
-        échantillon et ils sont également en ligne pour plus de
-        détails sur leur compte Artstation.
-      </p>
-      <p>
-        <a
-          href="https://www.artstation.com/limartartschool"
-          target="_blank"
-          rel="noopener"
-        >
-          <img class="alignnone size-large wp-image-9025"
-          src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/limart-ecole-de-dessin-1030x487.jpg
-          alt width="100%"/></a
-        >
-      </p>
-      <div class="isotop_gal" style="width: 100%;">
-        <div
-          id="grillec73279f"
-          class="grille"
-          style="position: relative; height: 1000px;"
-        >
+    <button class="menu">Menu</button>
+    <div class="canvi-navbar">
+      <div class="lien menu-limart" onclick="openLimart()">
+        Lim'Art
+      </div>
+      <div class="lien menu-archi" onclick="openArchi()">Archi</div>
+      <div class="lien menu-design" onclick="openDesign()">
+        Design
+      </div>
+    </div>
+    <div class="canvi-content">
+      <div class="limart" id="limart">
+        <h2>Que font les étudiants de l’école de dessin Lim’Art ?</h2>
+        <p>
+          Au sein de Bordeaux Ynov Campus,
+          <strong>Limart</strong> propose l’une des meilleures
+          formations en dessin et
+          <strong>illustration numérique</strong>. Nos étudiants sont
+          d’abord formés aux techniques fondamentales du
+          <strong>dessin académique et traditionnel</strong>, en
+          parallèle ils acquièrent toutes les connaissances en
+          <strong>dessin digital</strong> avec la maîtrise de tous les
+          logiciels utilisés par les<strong>
+            professionnels de l’image en 2D</strong
+          >. En 5 ans, ils atteignent un niveau exceptionnel grâce au
+          <strong>coaching personnalisé et individuel</strong
+          >&nbsp;des professionnels qui les suivent quotidiennement.
+          Ce <strong>parcours exigeant</strong> les mènera vers
+          un<strong> large choix de carrières</strong>
+          dans l’édition, les jeux vidéo, les jeux de plateau ou de
+          société, le cinéma, le cinéma d’animation, les effets
+          spéciaux, etc.
+        </p>
+        <p>
+          Leurs travaux sont visibles ci-dessous pour un petit
+          échantillon et ils sont également en ligne pour plus de
+          détails sur leur compte Artstation.
+        </p>
+        <p>
           <a
-            href="https://ynov-bordeaux.com/wp-content/uploads/2018/03/ynov-illustration-exercice-bd-blacksad.jpg"
-            class="item transition limart"
-            style="position: absolute; left: 66.633%; top: 0px;"
-            ><img
-            src=https://ynov-bordeaux.com/wp-content/uploads/2018/03/ynov-illustration-exercice-bd-blacksad-300x147.jpg
-            style="width: 100%;height: 100%" alt></a
-          ><a
-            href="https://ynov-bordeaux.com/wp-content/uploads/2018/03/Ynov-illustration-digitale-test-arbres.jpg"
-            class="item transition limart"
-            style="position: absolute; left: 33.2659%; top: 0px;"
-            ><img
-            src=https://ynov-bordeaux.com/wp-content/uploads/2018/03/Ynov-illustration-digitale-test-arbres-300x212.jpg
-            style="width: 100%;height: 100%" alt></a
-          ><a
-            href="https://ynov-bordeaux.com/wp-content/uploads/2018/03/ynov-illustration-digitale-espace-low-poly.jpg"
-            class="item transition limart item--height2"
-            style="position: absolute; left: 0%; top: 0px;"
-            ><img
-            src=https://ynov-bordeaux.com/wp-content/uploads/2018/03/ynov-illustration-digitale-espace-low-poly-199x300.jpg
-            style="width: 100%;height: 100%" alt></a
-          ><a
-            href="https://ynov-bordeaux.com/wp-content/uploads/2018/03/Ynov-illustration-digitale-decor-dessin-anime-docks-couleur.jpg"
-            class="item transition limart"
-            style="position: absolute; left: 0%; top: 400px;"
-            ><img
-            src=https://ynov-bordeaux.com/wp-content/uploads/2018/03/Ynov-illustration-digitale-decor-dessin-anime-docks-couleur-300x201.jpg
-            style="width: 100%;height: 100%" alt></a
-          ><a
-            href="https://ynov-bordeaux.com/wp-content/uploads/2018/03/Hugo-Vaudry-chien.jpg"
-            class="item transition limart item--width2 item--height2"
-            style="position: absolute; left: 0%; top: 600px;"
-            ><img
-            src=https://ynov-bordeaux.com/wp-content/uploads/2018/03/Hugo-Vaudry-chien-300x210.jpg
-            style="width: 100%;height: 100%" alt></a
-          ><a
-            href="https://ynov-bordeaux.com/wp-content/uploads/2018/03/Hugo-Vaudry-alien.jpg"
-            class="item transition limart item--width2 item--height2"
-            style="position: absolute; left: 33.2659%; top: 200px;"
-            ><img
-            src=https://ynov-bordeaux.com/wp-content/uploads/2018/03/Hugo-Vaudry-alien-1030x773.jpg
-            style="width: 100%;height: 100%" alt></a
+            href="https://www.artstation.com/limartartschool"
+            target="_blank"
+            rel="noopener"
           >
+            <img class="alignnone size-large wp-image-9025"
+            src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/limart-ecole-de-dessin-1030x487.jpg
+            alt width="100%"/></a
+          >
+        </p>
+      </div>
+      <div class="archi" id="archi">
+        <h2>
+          Que font les étudiants de l’école d’architecture d’intérieur
+          et design ?
+        </h2>
+        <p>
+          <strong>Limart</strong> propose aussi une formation en
+          <strong>architecture d’intérieur et design</strong>. Nos
+          étudiants apprennent à présenter des propositions
+          d’aménagement de lieux, que ce soit en croquis ou via un
+          logiciel 3D. Ils apprennent aussi à travailler différentes
+          matières et à réaliser des objets.
+        </p>
+        <div class="isotop_gal" style="width: 100%;">
+          <div
+            id="grille5b1307d"
+            class="grille"
+            style="position: relative; height: 1000px;"
+          >
+            <a
+              href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/tahnee-peterson-stuart_Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus.jpg"
+              class="item transition architecture-dinterieur-et-design"
+              style="position: absolute; left: 33.2659%; top: 400px;"
+              ><img
+              src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/tahnee-peterson-stuart_Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus-1030x592.jpg
+              style="width: 100%;height: 100%"
+              alt=tahnee-peterson-stuart_Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus></a
+            ><a
+              href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/rooftop-cap-sciences-2018-Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus.jpg"
+              class="item transition architecture-dinterieur-et-design item--height2"
+              style="position: absolute; left: 0%; top: 0px;"
+              ><img
+              src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/rooftop-cap-sciences-2018-Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus-773x1030.jpg
+              style="width: 100%;height: 100%"
+              alt=rooftop-cap-sciences-2018-Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus></a
+            ><a
+              href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/rooftop-cap-sciences-2-2018-Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus.jpg"
+              class="item transition architecture-dinterieur-et-design"
+              style="position: absolute; left: 33.2659%; top: 0px;"
+              ><img
+              src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/rooftop-cap-sciences-2-2018-Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus-1030x773.jpg
+              style="width: 100%;height: 100%"
+              alt=rooftop-cap-sciences-2-2018-Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus></a
+            ><a
+              href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus.jpg"
+              class="item transition architecture-dinterieur-et-design"
+              style="position: absolute; left: 0%; top: 600px;"
+              ><img
+              src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus-1030x579.jpg
+              style="width: 100%;height: 100%"
+              alt=Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus></a
+            ><a
+              href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/LIMART_Atelier-Bois-Dircks-2018_Juliette-Labrousse_Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus.jpg"
+              class="item transition architecture-dinterieur-et-design item--height2"
+              style="position: absolute; left: 66.633%; top: 600px;"
+              ><img
+              src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/LIMART_Atelier-Bois-Dircks-2018_Juliette-Labrousse_Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus-1030x1030.jpg
+              style="width: 100%;height: 100%"
+              alt=LIMART_Atelier-Bois-Dircks-2018_Juliette-Labrousse_Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus></a
+            ><a
+              href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/imprimante@auvence_rough-2_Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus.jpg"
+              class="item transition architecture-dinterieur-et-design"
+              style="position: absolute; left: 0%; top: 400px;"
+              ><img
+              src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/imprimante@auvence_rough-2_Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus-1030x728.jpg
+              style="width: 100%;height: 100%"
+              alt=imprimante@auvence_rough-2_Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus></a
+            ><a
+              href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/imprimante@auvence_rough_Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus.jpg"
+              class="item transition architecture-dinterieur-et-design"
+              style="position: absolute; left: 33.2659%; top: 600px;"
+              ><img
+              src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/imprimante@auvence_rough_Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus-1030x728.jpg
+              style="width: 100%;height: 100%"
+              alt=imprimante@auvence_rough_Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus></a
+            ><a
+              href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/imprimante@auvence_Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus.jpg"
+              class="item transition architecture-dinterieur-et-design item--height2"
+              style="position: absolute; left: 66.633%; top: 0px;"
+              ><img
+              src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/imprimante@auvence_Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus-729x1030.jpg
+              style="width: 100%;height: 100%"
+              alt=imprimante@auvence_Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus></a
+            ><a
+              href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/chaise_limart_architecture-interieur-et-designe_bordeaux-ynov-campus.jpg"
+              class="item transition architecture-dinterieur-et-design"
+              style="position: absolute; left: 66.633%; top: 400px;"
+              ><img
+              src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/chaise_limart_architecture-interieur-et-designe_bordeaux-ynov-campus-1030x579.jpg
+              style="width: 100%;height: 100%"
+              alt=chaise_limart_architecture-interieur-et-designe_bordeaux-ynov-campus></a
+            ><a
+              href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/amenagement-hotel-petit-dej_Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus.jpg"
+              data-featherlight="https://ynov-bordeaux.com/wp-content/uploads/2019/01/amenagement-hotel-petit-dej_Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus.jpg"
+              class="item transition architecture-dinterieur-et-design"
+              style="position: absolute; left: 33.2659%; top: 200px;"
+              ><img
+              src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/amenagement-hotel-petit-dej_Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus.jpg
+              style="width: 100%;height: 100%"
+              alt=amenagement-hotel-petit-dej_Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus></a
+            >
+          </div>
         </div>
       </div>
-      <hr />
-      <h2>
-        Que font les étudiants de l’école d’architecture d’intérieur
-        et design ?
-      </h2>
-      <p>
-        <strong>Limart</strong> propose aussi une formation en
-        <strong>architecture d’intérieur et design</strong>. Nos
-        étudiants apprennent à présenter des propositions
-        d’aménagement de lieux, que ce soit en croquis ou via un
-        logiciel 3D. Ils apprennent aussi à travailler différentes
-        matières et à réaliser des objets.
-      </p>
-      <div class="isotop_gal" style="width: 100%;">
-        <div
-          id="grille5b1307d"
-          class="grille"
-          style="position: relative; height: 1000px;"
-        >
-          <a
-            href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/tahnee-peterson-stuart_Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus.jpg"
-            class="item transition architecture-dinterieur-et-design"
-            style="position: absolute; left: 33.2659%; top: 400px;"
-            ><img
-            src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/tahnee-peterson-stuart_Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus-1030x592.jpg
-            style="width: 100%;height: 100%"
-            alt=tahnee-peterson-stuart_Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus></a
-          ><a
-            href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/rooftop-cap-sciences-2018-Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus.jpg"
-            class="item transition architecture-dinterieur-et-design item--height2"
-            style="position: absolute; left: 0%; top: 0px;"
-            ><img
-            src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/rooftop-cap-sciences-2018-Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus-773x1030.jpg
-            style="width: 100%;height: 100%"
-            alt=rooftop-cap-sciences-2018-Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus></a
-          ><a
-            href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/rooftop-cap-sciences-2-2018-Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus.jpg"
-            class="item transition architecture-dinterieur-et-design"
-            style="position: absolute; left: 33.2659%; top: 0px;"
-            ><img
-            src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/rooftop-cap-sciences-2-2018-Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus-1030x773.jpg
-            style="width: 100%;height: 100%"
-            alt=rooftop-cap-sciences-2-2018-Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus></a
-          ><a
-            href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus.jpg"
-            class="item transition architecture-dinterieur-et-design"
-            style="position: absolute; left: 0%; top: 600px;"
-            ><img
-            src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus-1030x579.jpg
-            style="width: 100%;height: 100%"
-            alt=Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus></a
-          ><a
-            href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/LIMART_Atelier-Bois-Dircks-2018_Juliette-Labrousse_Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus.jpg"
-            class="item transition architecture-dinterieur-et-design item--height2"
-            style="position: absolute; left: 66.633%; top: 600px;"
-            ><img
-            src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/LIMART_Atelier-Bois-Dircks-2018_Juliette-Labrousse_Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus-1030x1030.jpg
-            style="width: 100%;height: 100%"
-            alt=LIMART_Atelier-Bois-Dircks-2018_Juliette-Labrousse_Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus></a
-          ><a
-            href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/imprimante@auvence_rough-2_Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus.jpg"
-            class="item transition architecture-dinterieur-et-design"
-            style="position: absolute; left: 0%; top: 400px;"
-            ><img
-            src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/imprimante@auvence_rough-2_Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus-1030x728.jpg
-            style="width: 100%;height: 100%"
-            alt=imprimante@auvence_rough-2_Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus></a
-          ><a
-            href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/imprimante@auvence_rough_Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus.jpg"
-            class="item transition architecture-dinterieur-et-design"
-            style="position: absolute; left: 33.2659%; top: 600px;"
-            ><img
-            src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/imprimante@auvence_rough_Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus-1030x728.jpg
-            style="width: 100%;height: 100%"
-            alt=imprimante@auvence_rough_Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus></a
-          ><a
-            href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/imprimante@auvence_Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus.jpg"
-            class="item transition architecture-dinterieur-et-design item--height2"
-            style="position: absolute; left: 66.633%; top: 0px;"
-            ><img
-            src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/imprimante@auvence_Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus-729x1030.jpg
-            style="width: 100%;height: 100%"
-            alt=imprimante@auvence_Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus></a
-          ><a
-            href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/chaise_limart_architecture-interieur-et-designe_bordeaux-ynov-campus.jpg"
-            class="item transition architecture-dinterieur-et-design"
-            style="position: absolute; left: 66.633%; top: 400px;"
-            ><img
-            src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/chaise_limart_architecture-interieur-et-designe_bordeaux-ynov-campus-1030x579.jpg
-            style="width: 100%;height: 100%"
-            alt=chaise_limart_architecture-interieur-et-designe_bordeaux-ynov-campus></a
-          ><a
-            href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/amenagement-hotel-petit-dej_Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus.jpg"
-            data-featherlight="https://ynov-bordeaux.com/wp-content/uploads/2019/01/amenagement-hotel-petit-dej_Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus.jpg"
-            class="item transition architecture-dinterieur-et-design"
-            style="position: absolute; left: 33.2659%; top: 200px;"
-            ><img
-            src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/amenagement-hotel-petit-dej_Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus.jpg
-            style="width: 100%;height: 100%"
-            alt=amenagement-hotel-petit-dej_Maquettes_limart_architecture-interieur-et-designe_bordeaux-ynov-campus></a
+      <div class="design" id="design">
+        <h2>Que font les étudiants d’Ynov Création &amp; Design ?</h2>
+        <p>
+          Les étudiants de notre
+          <a href="https://ynov-bordeaux.com/ecole-design-creation/"
+            >École de Design</a
           >
-        </div>
-      </div>
-      <hr />
-      <h2>Que font les étudiants d’Ynov Création &amp; Design ?</h2>
-      <p>
-        Les étudiants de notre
-        <a href="https://ynov-bordeaux.com/ecole-design-creation/"
-          >École de Design</a
-        >
-        réalisent plusieurs projets durant leur formation, les
-        préparant à leur future vie professionnelle. Identité
-        visuelle, webdesign, mise situation de campagnes de publicité,
-        goodies…
-      </p>
-      <div class="isotop_gal" style="width: 100%;">
-        <div
-          id="grilleba4f912"
-          class="grille"
-          style="position: relative; height: 1600px;"
-        >
-          <a
-            href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/LEGRAND-Mathilde_lucas-Axel_Nizzi-Jules_Seguin-Jeremy_Webcom-design-graphique_M1_2017-2018_bordeaux-ynov-campus-3.jpg"
-            class="item transition ynov-creation-design item--height2"
-            style="position: absolute; left: 0%; top: 400px;"
-            ><img
-            src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/LEGRAND-Mathilde_lucas-Axel_Nizzi-Jules_Seguin-Jeremy_Webcom-design-graphique_M1_2017-2018_bordeaux-ynov-campus-3-255x1030.jpg
-            style="width: 100%;height: 100%"
-            alt=LEGRAND-Mathilde_lucas-Axel_Nizzi-Jules_Seguin-Jeremy_Webcom-design-graphique_M1_2017-2018_bordeaux-ynov-campus-3></a
-          ><a
-            href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/LEGRAND-Mathilde_lucas-Axel_Nizzi-Jules_Seguin-Jeremy_Webcom-design-graphique_M1_2017-2018_bordeaux-ynov-campus-2.jpg"
-            class="item transition ynov-creation-design"
-            style="position: absolute; left: 66.633%; top: 200px;"
-            ><img
-            src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/LEGRAND-Mathilde_lucas-Axel_Nizzi-Jules_Seguin-Jeremy_Webcom-design-graphique_M1_2017-2018_bordeaux-ynov-campus-2-1030x687.jpg
-            style="width: 100%;height: 100%"
-            alt=LEGRAND-Mathilde_lucas-Axel_Nizzi-Jules_Seguin-Jeremy_Webcom-design-graphique_M1_2017-2018_bordeaux-ynov-campus-2></a
-          ><a
-            href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/LEGRAND-Mathilde_lucas-Axel_Nizzi-Jules_Seguin-Jeremy_Webcom-design-graphique_M1_2017-2018_bordeaux-ynov-campus.jpg"
-            class="item transition ynov-creation-design"
-            style="position: absolute; left: 66.633%; top: 400px;"
-            ><img
-            src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/LEGRAND-Mathilde_lucas-Axel_Nizzi-Jules_Seguin-Jeremy_Webcom-design-graphique_M1_2017-2018_bordeaux-ynov-campus.jpg
-            style="width: 100%;height: 100%"
-            alt=LEGRAND-Mathilde_lucas-Axel_Nizzi-Jules_Seguin-Jeremy_Webcom-design-graphique_M1_2017-2018_bordeaux-ynov-campus></a
-          ><a
-            href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/Antoine-Justes-Amandine-Paradis-Olivier_Web-Com-2014-2015_bordeaux-Ynov-Campus.jpg"
-            class="item transition ynov-creation-design item--width2 item--height2"
-            style="position: absolute; left: 0%; top: 0px;"
-            ><img
-            src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/Antoine-Justes-Amandine-Paradis-Olivier_Web-Com-2014-2015_bordeaux-Ynov-Campus.jpg
-            style="width: 100%;height: 100%"
-            alt=Antoine-Justes-Amandine-Paradis-Olivier_Web-Com-2014-2015_bordeaux-Ynov-Campus></a
-          ><a
-            href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/Antoine-Justes-Amandine-Paradis-Olivier_flyer_Web-Com-2014-2015_bordeaux-Ynov-Campus.jpg"
-            class="item transition ynov-creation-design"
-            style="position: absolute; left: 66.633%; top: 0px;"
-            ><img
-            src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/Antoine-Justes-Amandine-Paradis-Olivier_flyer_Web-Com-2014-2015_bordeaux-Ynov-Campus.jpg
-            style="width: 100%;height: 100%"
-            alt=Antoine-Justes-Amandine-Paradis-Olivier_flyer_Web-Com-2014-2015_bordeaux-Ynov-Campus></a
-          ><a
-            href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/Jaroussie-Nicolas_Bachelor-Web-Com-2018_bordeaux-Ynov-Campus.jpg"
-            class="item transition ynov-creation-design item--height2"
-            style="position: absolute; left: 66.633%; top: 800px;"
-            ><img
-            src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/Jaroussie-Nicolas_Bachelor-Web-Com-2018_bordeaux-Ynov-Campus-518x1030.jpg
-            style="width: 100%;height: 100%"
-            alt=Jaroussie-Nicolas_Bachelor-Web-Com-2018_bordeaux-Ynov-Campus></a
-          ><a
-            href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/affiche-innover-Alexandre-Camelle-Laura-Pouvereau-Alexandra-Denis-Mounir-Sakrane_M2-Web-com-graphics_2017-2018_bordeaux-ynov-campus.jpg"
-            class="item transition ynov-creation-design"
-            style="position: absolute; left: 33.2659%; top: 800px;"
-            ><img
-            src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/affiche-innover-Alexandre-Camelle-Laura-Pouvereau-Alexandra-Denis-Mounir-Sakrane_M2-Web-com-graphics_2017-2018_bordeaux-ynov-campus.jpg
-            style="width: 100%;height: 100%"
-            alt=affiche-innover-Alexandre-Camelle,-Laura-Pouvereau,-Alexandra-Denis,-Mounir-Sakrane_M2-Web-com-graphics_2017-2018_bordeaux-ynov-campus></a
-          ><a
-            href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/Alexandre-Camelle-Laura-Pouvereau-Alexandra-Denis-Mounir-Sakrane_M2-Web-com-graphics_2017-2018_bordeaux-ynov-campus.jpg"
-            class="item transition ynov-creation-design"
-            style="position: absolute; left: 0%; top: 1000px;"
-            ><img
-            src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/Alexandre-Camelle-Laura-Pouvereau-Alexandra-Denis-Mounir-Sakrane_M2-Web-com-graphics_2017-2018_bordeaux-ynov-campus.jpg
-            style="width: 100%;height: 100%"
-            alt=Alexandre-Camelle,-Laura-Pouvereau,-Alexandra-Denis,-Mounir-Sakrane_M2-Web-com-graphics_2017-2018_bordeaux-ynov-campus></a
-          ><a
-            href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/Casquette-Fleurs-Alexandre-Camelle-Laura-Pouvereau-Alexandra-Denis-Mounir-Sakrane_M2-Web-com-graphics_2017-2018_bordeaux-ynov-campus.jpg"
-            class="item transition ynov-creation-design"
-            style="position: absolute; left: 33.2659%; top: 400px;"
-            ><img
-            src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/Casquette-Fleurs-Alexandre-Camelle-Laura-Pouvereau-Alexandra-Denis-Mounir-Sakrane_M2-Web-com-graphics_2017-2018_bordeaux-ynov-campus.jpg
-            style="width: 100%;height: 100%"
-            alt=Casquette-Fleurs-Alexandre-Camelle,-Laura-Pouvereau,-Alexandra-Denis,-Mounir-Sakrane_M2-Web-com-graphics_2017-2018_bordeaux-ynov-campus></a
-          ><a
-            href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/Chaussures-Camo-Alexandre-Camelle-Laura-Pouvereau-Alexandra-Denis-Mounir-Sakrane_M2-Web-com-graphics_2017-2018_bordeaux-ynov-campus.jpg"
-            class="item transition ynov-creation-design"
-            style="position: absolute; left: 0%; top: 800px;"
-            ><img
-            src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/Chaussures-Camo-Alexandre-Camelle-Laura-Pouvereau-Alexandra-Denis-Mounir-Sakrane_M2-Web-com-graphics_2017-2018_bordeaux-ynov-campus.jpg
-            style="width: 100%;height: 100%"
-            alt=Chaussures-Camo-Alexandre-Camelle,-Laura-Pouvereau,-Alexandra-Denis,-Mounir-Sakrane_M2-Web-com-graphics_2017-2018_bordeaux-ynov-campus></a
-          ><a
-            href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/T-Shirt-Fleurs-Alexandre-Camelle-Laura-Pouvereau-Alexandra-Denis-Mounir-Sakrane_M2-Web-com-graphics_2017-2018_bordeaux-ynov-campus.jpg"
-            class="item transition ynov-creation-design"
-            style="position: absolute; left: 33.2659%; top: 600px;"
-            ><img
-            src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/T-Shirt-Fleurs-Alexandre-Camelle-Laura-Pouvereau-Alexandra-Denis-Mounir-Sakrane_M2-Web-com-graphics_2017-2018_bordeaux-ynov-campus.jpg
-            style="width: 100%;height: 100%"
-            alt=T-Shirt-Fleurs-Alexandre-Camelle,-Laura-Pouvereau,-Alexandra-Denis,-Mounir-Sakrane_M2-Web-com-graphics_2017-2018_bordeaux-ynov-campus></a
-          ><a
-            href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/Saunders-Antonia-abribus_Bachelor-Web-Com-2018_bordeaux-Ynov-Campus.jpg"
-            class="item transition ynov-creation-design"
-            style="position: absolute; left: 66.633%; top: 600px;"
-            ><img
-            src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/Saunders-Antonia-abribus_Bachelor-Web-Com-2018_bordeaux-Ynov-Campus-1030x727.jpg
-            style="width: 100%;height: 100%"
-            alt=Saunders-Antonia-abribus_Bachelor-Web-Com-2018_bordeaux-Ynov-Campus></a
-          ><a
-            href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/Saunders-Antonia_Bachelor-Web-Com-2018_bordeaux-Ynov-Campus.jpg"
-            class="item transition ynov-creation-design"
-            style="position: absolute; left: 33.2659%; top: 1000px;"
-            ><img
-            src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/Saunders-Antonia_Bachelor-Web-Com-2018_bordeaux-Ynov-Campus-1030x727.jpg
-            style="width: 100%;height: 100%"
-            alt=Saunders-Antonia_Bachelor-Web-Com-2018_bordeaux-Ynov-Campus></a
-          ><a
-            href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/Pages-Morgane_Bachelor-Web-Com-2018_bordeaux-Ynov-Campus.jpg"
-            class="item transition ynov-creation-design item--height2"
-            style="position: absolute; left: 0%; top: 1200px;"
-            ><img
-            src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/Pages-Morgane_Bachelor-Web-Com-2018_bordeaux-Ynov-Campus-792x1030.jpg
-            style="width: 100%;height: 100%" alt="Pages
-            Morgane_Bachelor Web Com 2018_bordeaux Ynov Campus"></a
+          réalisent plusieurs projets durant leur formation, les
+          préparant à leur future vie professionnelle. Identité
+          visuelle, webdesign, mise situation de campagnes de
+          publicité, goodies…
+        </p>
+        <div class="isotop_gal" style="width: 100%;">
+          <div
+            id="grilleba4f912"
+            class="grille"
+            style="position: relative; height: 1600px;"
           >
+            <a
+              href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/LEGRAND-Mathilde_lucas-Axel_Nizzi-Jules_Seguin-Jeremy_Webcom-design-graphique_M1_2017-2018_bordeaux-ynov-campus-3.jpg"
+              class="item transition ynov-creation-design item--height2"
+              style="position: absolute; left: 0%; top: 400px;"
+              ><img
+              src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/LEGRAND-Mathilde_lucas-Axel_Nizzi-Jules_Seguin-Jeremy_Webcom-design-graphique_M1_2017-2018_bordeaux-ynov-campus-3-255x1030.jpg
+              style="width: 100%;height: 100%"
+              alt=LEGRAND-Mathilde_lucas-Axel_Nizzi-Jules_Seguin-Jeremy_Webcom-design-graphique_M1_2017-2018_bordeaux-ynov-campus-3></a
+            ><a
+              href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/LEGRAND-Mathilde_lucas-Axel_Nizzi-Jules_Seguin-Jeremy_Webcom-design-graphique_M1_2017-2018_bordeaux-ynov-campus-2.jpg"
+              class="item transition ynov-creation-design"
+              style="position: absolute; left: 66.633%; top: 200px;"
+              ><img
+              src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/LEGRAND-Mathilde_lucas-Axel_Nizzi-Jules_Seguin-Jeremy_Webcom-design-graphique_M1_2017-2018_bordeaux-ynov-campus-2-1030x687.jpg
+              style="width: 100%;height: 100%"
+              alt=LEGRAND-Mathilde_lucas-Axel_Nizzi-Jules_Seguin-Jeremy_Webcom-design-graphique_M1_2017-2018_bordeaux-ynov-campus-2></a
+            ><a
+              href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/LEGRAND-Mathilde_lucas-Axel_Nizzi-Jules_Seguin-Jeremy_Webcom-design-graphique_M1_2017-2018_bordeaux-ynov-campus.jpg"
+              class="item transition ynov-creation-design"
+              style="position: absolute; left: 66.633%; top: 400px;"
+              ><img
+              src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/LEGRAND-Mathilde_lucas-Axel_Nizzi-Jules_Seguin-Jeremy_Webcom-design-graphique_M1_2017-2018_bordeaux-ynov-campus.jpg
+              style="width: 100%;height: 100%"
+              alt=LEGRAND-Mathilde_lucas-Axel_Nizzi-Jules_Seguin-Jeremy_Webcom-design-graphique_M1_2017-2018_bordeaux-ynov-campus></a
+            ><a
+              href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/Antoine-Justes-Amandine-Paradis-Olivier_Web-Com-2014-2015_bordeaux-Ynov-Campus.jpg"
+              class="item transition ynov-creation-design item--width2 item--height2"
+              style="position: absolute; left: 0%; top: 0px;"
+              ><img
+              src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/Antoine-Justes-Amandine-Paradis-Olivier_Web-Com-2014-2015_bordeaux-Ynov-Campus.jpg
+              style="width: 100%;height: 100%"
+              alt=Antoine-Justes-Amandine-Paradis-Olivier_Web-Com-2014-2015_bordeaux-Ynov-Campus></a
+            ><a
+              href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/Antoine-Justes-Amandine-Paradis-Olivier_flyer_Web-Com-2014-2015_bordeaux-Ynov-Campus.jpg"
+              class="item transition ynov-creation-design"
+              style="position: absolute; left: 66.633%; top: 0px;"
+              ><img
+              src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/Antoine-Justes-Amandine-Paradis-Olivier_flyer_Web-Com-2014-2015_bordeaux-Ynov-Campus.jpg
+              style="width: 100%;height: 100%"
+              alt=Antoine-Justes-Amandine-Paradis-Olivier_flyer_Web-Com-2014-2015_bordeaux-Ynov-Campus></a
+            ><a
+              href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/Jaroussie-Nicolas_Bachelor-Web-Com-2018_bordeaux-Ynov-Campus.jpg"
+              class="item transition ynov-creation-design item--height2"
+              style="position: absolute; left: 66.633%; top: 800px;"
+              ><img
+              src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/Jaroussie-Nicolas_Bachelor-Web-Com-2018_bordeaux-Ynov-Campus-518x1030.jpg
+              style="width: 100%;height: 100%"
+              alt=Jaroussie-Nicolas_Bachelor-Web-Com-2018_bordeaux-Ynov-Campus></a
+            ><a
+              href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/affiche-innover-Alexandre-Camelle-Laura-Pouvereau-Alexandra-Denis-Mounir-Sakrane_M2-Web-com-graphics_2017-2018_bordeaux-ynov-campus.jpg"
+              class="item transition ynov-creation-design"
+              style="position: absolute; left: 33.2659%; top: 800px;"
+              ><img
+              src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/affiche-innover-Alexandre-Camelle-Laura-Pouvereau-Alexandra-Denis-Mounir-Sakrane_M2-Web-com-graphics_2017-2018_bordeaux-ynov-campus.jpg
+              style="width: 100%;height: 100%"
+              alt=affiche-innover-Alexandre-Camelle,-Laura-Pouvereau,-Alexandra-Denis,-Mounir-Sakrane_M2-Web-com-graphics_2017-2018_bordeaux-ynov-campus></a
+            ><a
+              href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/Alexandre-Camelle-Laura-Pouvereau-Alexandra-Denis-Mounir-Sakrane_M2-Web-com-graphics_2017-2018_bordeaux-ynov-campus.jpg"
+              class="item transition ynov-creation-design"
+              style="position: absolute; left: 0%; top: 1000px;"
+              ><img
+              src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/Alexandre-Camelle-Laura-Pouvereau-Alexandra-Denis-Mounir-Sakrane_M2-Web-com-graphics_2017-2018_bordeaux-ynov-campus.jpg
+              style="width: 100%;height: 100%"
+              alt=Alexandre-Camelle,-Laura-Pouvereau,-Alexandra-Denis,-Mounir-Sakrane_M2-Web-com-graphics_2017-2018_bordeaux-ynov-campus></a
+            ><a
+              href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/Casquette-Fleurs-Alexandre-Camelle-Laura-Pouvereau-Alexandra-Denis-Mounir-Sakrane_M2-Web-com-graphics_2017-2018_bordeaux-ynov-campus.jpg"
+              class="item transition ynov-creation-design"
+              style="position: absolute; left: 33.2659%; top: 400px;"
+              ><img
+              src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/Casquette-Fleurs-Alexandre-Camelle-Laura-Pouvereau-Alexandra-Denis-Mounir-Sakrane_M2-Web-com-graphics_2017-2018_bordeaux-ynov-campus.jpg
+              style="width: 100%;height: 100%"
+              alt=Casquette-Fleurs-Alexandre-Camelle,-Laura-Pouvereau,-Alexandra-Denis,-Mounir-Sakrane_M2-Web-com-graphics_2017-2018_bordeaux-ynov-campus></a
+            ><a
+              href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/Chaussures-Camo-Alexandre-Camelle-Laura-Pouvereau-Alexandra-Denis-Mounir-Sakrane_M2-Web-com-graphics_2017-2018_bordeaux-ynov-campus.jpg"
+              class="item transition ynov-creation-design"
+              style="position: absolute; left: 0%; top: 800px;"
+              ><img
+              src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/Chaussures-Camo-Alexandre-Camelle-Laura-Pouvereau-Alexandra-Denis-Mounir-Sakrane_M2-Web-com-graphics_2017-2018_bordeaux-ynov-campus.jpg
+              style="width: 100%;height: 100%"
+              alt=Chaussures-Camo-Alexandre-Camelle,-Laura-Pouvereau,-Alexandra-Denis,-Mounir-Sakrane_M2-Web-com-graphics_2017-2018_bordeaux-ynov-campus></a
+            ><a
+              href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/T-Shirt-Fleurs-Alexandre-Camelle-Laura-Pouvereau-Alexandra-Denis-Mounir-Sakrane_M2-Web-com-graphics_2017-2018_bordeaux-ynov-campus.jpg"
+              class="item transition ynov-creation-design"
+              style="position: absolute; left: 33.2659%; top: 600px;"
+              ><img
+              src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/T-Shirt-Fleurs-Alexandre-Camelle-Laura-Pouvereau-Alexandra-Denis-Mounir-Sakrane_M2-Web-com-graphics_2017-2018_bordeaux-ynov-campus.jpg
+              style="width: 100%;height: 100%"
+              alt=T-Shirt-Fleurs-Alexandre-Camelle,-Laura-Pouvereau,-Alexandra-Denis,-Mounir-Sakrane_M2-Web-com-graphics_2017-2018_bordeaux-ynov-campus></a
+            ><a
+              href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/Saunders-Antonia-abribus_Bachelor-Web-Com-2018_bordeaux-Ynov-Campus.jpg"
+              class="item transition ynov-creation-design"
+              style="position: absolute; left: 66.633%; top: 600px;"
+              ><img
+              src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/Saunders-Antonia-abribus_Bachelor-Web-Com-2018_bordeaux-Ynov-Campus-1030x727.jpg
+              style="width: 100%;height: 100%"
+              alt=Saunders-Antonia-abribus_Bachelor-Web-Com-2018_bordeaux-Ynov-Campus></a
+            ><a
+              href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/Saunders-Antonia_Bachelor-Web-Com-2018_bordeaux-Ynov-Campus.jpg"
+              class="item transition ynov-creation-design"
+              style="position: absolute; left: 33.2659%; top: 1000px;"
+              ><img
+              src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/Saunders-Antonia_Bachelor-Web-Com-2018_bordeaux-Ynov-Campus-1030x727.jpg
+              style="width: 100%;height: 100%"
+              alt=Saunders-Antonia_Bachelor-Web-Com-2018_bordeaux-Ynov-Campus></a
+            ><a
+              href="https://ynov-bordeaux.com/wp-content/uploads/2019/01/Pages-Morgane_Bachelor-Web-Com-2018_bordeaux-Ynov-Campus.jpg"
+              class="item transition ynov-creation-design item--height2"
+              style="position: absolute; left: 0%; top: 1200px;"
+              ><img
+              src=https://ynov-bordeaux.com/wp-content/uploads/2019/01/Pages-Morgane_Bachelor-Web-Com-2018_bordeaux-Ynov-Campus-792x1030.jpg
+              style="width: 100%;height: 100%" alt="Pages
+              Morgane_Bachelor Web Com 2018_bordeaux Ynov Campus"></a
+            >
+          </div>
         </div>
       </div>
     </div>
+    <script src="lib/canvi.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
